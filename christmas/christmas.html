@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,6 +12,7 @@
         <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
         <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <!-- -->
+       <?php include '../include/ip.php';?>
         <link href="../main.css" rel="stylesheet" type="text/css">
         <style type="text/css">
 
@@ -87,7 +89,7 @@
             <div class="col-sm-12">
                 <div class='article' >
                     <br />
-                    <h1 style="margin-left: 20px; margin-right: 20px;">Everything about Christmas in America</h1>
+                    <h1 style="margin-left: 20px; margin-right: 20px;">Everything about Christmas in America.</h1>
                     <p style="margin-left: 30px; margin-right: 30px;">Have you ever wondered how people in America celebrate Christmas? Do they have a Santa that eats porridge? Do they eat marzipan? What is up with the christmas movies?</p>
                     <p>&nbsp;</p>
                     <p>
@@ -129,7 +131,21 @@
                         </button>
                     </a>
                   <br></br>
-                </div>
+                   <!--Comments-->
+                   <hr>
+                   <h1>Comments</h1>
+                   <form action="" method="POST" class="form-group">
+                       Name: <br><input type="text" name="name" class="form-control mb-2 mr-sm-2" placeholder="Your name, or someone elses, I don't care">
+                       Comment: <br><textarea name="Comment" class="form-control mb-2 mr-sm-2" placeholder="Write something"></textarea><br>
+                       <!--<input type="submit" name="Post comment">-->
+                       <button type="submit" name="Post comment" class="btn btn-outline-primary">Submit</button>
+                   </form>
+                   <hr>
+                   <h2>Other comments</h2>
+                   <?php 
+                       include "comments.php"
+                   ?>
+                </div>  
                 </div>
                 </div>
             </div>
