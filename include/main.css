@@ -45,8 +45,8 @@
 
         Body {
             Background-color: #242222;
+            color: #fff;
         }
-
         .article {
             position: static;
             line-height: 1.6;
