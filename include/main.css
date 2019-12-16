@@ -41,4 +41,19 @@
         line-height: 1.6;
         font-size: 15px;
     }
+    @media screen and (max-width: 481px){
 
+        .article {
+            position: static;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 5px 10px 8px 10px #111111;
+            image-resolution: 200px 100px;
+            background-color: green;
+        
+      
+      
+      }
+    }
