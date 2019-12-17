@@ -41,3 +41,12 @@
         line-height: 1.6;
         font-size: 15px;
     }
+    .article h1 {
+        margin-left: 20px;
+    }
+    .article h2 {
+        margin-left: 20px;
+    }
+    .article p{
+        margin-left: 30px ;
+    }
