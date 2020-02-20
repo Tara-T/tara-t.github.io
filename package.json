@@ -1,0 +1,19 @@
+{
+    "name": "tara-t.github.io",
+    "description": "My website",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Tara-T/tara-t.github.io.git"
+    },
+    "keywords": [],
+    "author": "tara-t",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Tara-T/tara-t.github.io/issues"
+    },
+    "dependencies": {
+        "jquery":"4.0.0",
+        "bootstrap":"4.3.1"
+    }
+}
