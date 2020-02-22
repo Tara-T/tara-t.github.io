@@ -1,72 +1,115 @@
-    @media (prefers-color-scheme: dark) {
 
-        body {
-            Background-color: #242222;
-            box-shadow: 5px 10px 8px 10px #111111;
-            color: white;
-        }
-
-        .jumbotron {
-            background-color: #4a4a4d
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-
-        body {
-            background-color: #ffffff;
-            box-shadow: 5px 10px 8px 10px #111111;
-        }
-
-        .jumbotron {
-            background-color: #bababe;
-        }
-    }
-
-    @media (prefers-color-scheme: no-preference) {
-
-        body {
-            background-color: #ffffff;
-            box-shadow: 5px 10px 8px 10px #111111;
-        }
-
-        .jumbotron {
-            background-color: #bababe;
-        }
-    }
-
-    .article {
-        position: static;
-        line-height: 1.6;
-        font-size: 15px;
-    }
-
-    .article h1 {
-        margin-right: 20px;
-    }
-
-    .article h2 {
-        margin-top: 20px;
-    }
-
-    .article p {
-        margin-right: 100px;
-        margin-right: 30px;
-    }
-
-    nav {
-        background-color: #6f42c1;
-    }
-
-    .christmas {
-        background-attachment: scroll;
-        background-image: url('tree.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: static;
-        line-height: 1.6;
-        ;
-        font-size: 15px;
-        box-shadow: 5px 10px 8px 10px #111111;
-    }
+html {
+    background: var(--backg);
+  --btn: #ea4b3c;
+    --backg: #232323;
+    --colorx: #fff;
+    --backgcr:#4a4a4d;
+  }
+  
+  html[data-theme='dartheme'] {
+    background: var(--backg);
+    --btn: #2ab1ce;
+    --backg: #fff;
+    --colorx: #232323;
+    --backgcr:#bababe;
+  }
+  
+  /* Button start */
+  input[type=checkbox] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    
+  }
+  label {
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 55px;
+    height: 30px;
+    background: var(--btn);
+  }
+  
+  label:after {
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 4px;
+  }
+  
+  input:checked + label {
+    background: #2ab1ce;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  html.transition *:after {
+    transition: ease-in-out 200ms !important;
+    transition-delay: 0 !important;
+  }
+  /* Button end */
+  
+  h1 {
+    color: var(--colorx);
+  }
+  h5 {
+      color: var(--colorx);
+  }
+  p {
+    color: var(--colorx);
+  }
+  body {
+      background-color:var(--backg);
+      box-shadow: 5px 10px 8px 10px #111111;
+  }
+  .jumbotron{
+      background-color: var(--backgcr);
+  }
+  .card {
+      background-color: var(--backgcr);
+  }
+  
+  .article {
+      position: static;
+      line-height: 1.6;
+      font-size: 15px;
+  }
+  
+  .article h1 {
+      margin-right: 20px;
+  }
+  
+  .article h2 {
+      margin-top: 20px;
+  }
+  
+  .article p {
+      margin-right: 100px;
+      margin-right: 30px;
+  }
+  
+  nav {
+      background-color: #6f42c1;
+  }
+  
+  .christmas {
+      background-attachment: scroll;
+      background-image: url('tree.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: static;
+      line-height: 1.6;
+      ;
+      font-size: 15px;
+      box-shadow: 5px 10px 8px 10px #111111;
+  }

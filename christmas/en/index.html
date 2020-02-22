@@ -11,24 +11,6 @@
     <script crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
     <!-- -->
     <link href='/include/main.css' rel='stylesheet' type='text/css'>
-    <style type='text/css'>
-    body {
-        background-color: #242222;
-        color: white;
-    }
-
-    .article {
-        background-attachment: scroll;
-        background-image: url('../tree.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: static;
-        line-height: 1.6;
-        color: white;
-        font-size: 15px;
-        box-shadow: 5px 10px 8px 10px #111111;
-    }
     </style>
     <link rel='icon' href='https://vignette.wikia.nocookie.net/undertale/images/d/d3/Frisk.png/revision/latest?cb=20151018200133'>
     <!-- Navbar -->
@@ -65,6 +47,9 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
+                <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+        <script  src="/include/main.js"></script>
                 <a href='../en' style="padding-right: 6px;">
                     <button type="button" class="btn btn-success my-2 my-sm-0">
                         English
