@@ -5,14 +5,16 @@ html {
     --backg: #232323;
     --colorx: #fff;
     --backgcr:#4a4a4d;
+    --shadow: #111111;
   }
   
-  html[data-theme='dartheme'] {
+  html[data-theme='lighttheme'] {
     background: var(--backg);
     --btn: #2ab1ce;
     --backg: #fff;
     --colorx: #232323;
     --backgcr:#bababe;
+    --shadow: #7e7e7e;
   }
   
   /* Button start */
@@ -61,6 +63,9 @@ html {
   h1 {
     color: var(--colorx);
   }
+  h3 {
+      color: var(--colorx);
+  }
   h5 {
       color: var(--colorx);
   }
@@ -69,7 +74,7 @@ html {
   }
   body {
       background-color:var(--backg);
-      box-shadow: 5px 10px 8px 10px #111111;
+      box-shadow: 5px 10px 8px 10px var(--shadow);
   }
   .jumbotron{
       background-color: var(--backgcr);
@@ -103,12 +108,12 @@ html {
   
   .christmas {
       background-attachment: scroll;
-      background-image: url('tree.png');
+      background-image: url('/christmas/tree.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       position: static;
       line-height: 1.6;
       font-size: 15px;
-      box-shadow: 5px 10px 8px 10px #111111;
+      box-shadow: 5px 10px 8px 10px var(--shadow);
   }
