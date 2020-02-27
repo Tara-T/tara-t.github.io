@@ -1,7 +1,7 @@
 
-html {
+html[data-theme='darktheme'] {
     background: var(--backg);
-  --btn: #ea4b3c;
+  --btn: #c1d414;
     --backg: #232323;
     --colorx: #fff;
     --backgcr:#4a4a4d;
@@ -46,7 +46,7 @@ html {
   }
   
   input:checked + label {
-    background: #2ab1ce;
+    background: #c1d414;
   }
   
   input:checked + label:after {
@@ -116,16 +116,5 @@ html {
       line-height: 1.6;
       font-size: 15px;
       box-shadow: 5px 10px 8px 10px var(--shadow);
-  }
-  .christmas h1 {
-    color: white;
-  }
-  .christmas h3 {
-    color: white;
-  }
-  .christmas h5 {
-    color: white;
-  }
-  .christmas p {
-    color: white;
+      color: white;
   }
