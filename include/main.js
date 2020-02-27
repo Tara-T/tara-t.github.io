@@ -3,10 +3,10 @@ var checkbox = document.querySelector('input[name=mode]');
         checkbox.addEventListener('change', function() {
             if(this.checked) {
                 trans()
-                document.documentElement.setAttribute('data-theme', 'dartheme')
+                document.documentElement.setAttribute('data-theme', 'lighttheme')
             } else {
                 trans()
-                document.documentElement.setAttribute('data-theme', 'lighttheme')
+                document.documentElement.setAttribute('data-theme', 'darktheme')
             }
         })
  
