@@ -1,9 +1,6 @@
-const toggle = document.querySelector('.toggle-input');
-const initialState = localStorage.getItem('toggleState') == 'true';
-toggle.checked = initialState;
 
-var checkbox = document.querySelector('input[name=mode]');
- 
+ var checkbox = document.querySelector('input[name=mode]');
+
         checkbox.addEventListener('change', function() {
             if(this.checked) {
                 trans()
@@ -13,7 +10,7 @@ var checkbox = document.querySelector('input[name=mode]');
                 document.documentElement.setAttribute('data-theme', 'darktheme')
             }
         })
- 
+
         let trans = () => {
             document.documentElement.classList.add('transition');
             window.setTimeout(() => {

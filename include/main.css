@@ -1,14 +1,14 @@
 
 html {
     background: var(--backg);
-  --btn: #c1d414;
+  --btn: #FFFF00;
     --backg: #232323;
     --colorx: #fff;
     --backgcr:#4a4a4d;
     --shadow: #111111;
   }
   
-  html[data-theme='darktheme'] {
+  html[data-theme='lighttheme'] {
     background: var(--backg);
     --btn: #2ab1ce;
     --backg: #fff;
@@ -46,7 +46,7 @@ html {
   }
   
   input:checked + label {
-    background: #c1d414;
+    background: #FFFF00;
   }
   
   input:checked + label:after {
