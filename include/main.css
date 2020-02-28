@@ -1,5 +1,5 @@
 
-html[data-theme='darktheme'] {
+html {
     background: var(--backg);
   --btn: #c1d414;
     --backg: #232323;
@@ -8,7 +8,7 @@ html[data-theme='darktheme'] {
     --shadow: #111111;
   }
   
-  html[data-theme='lighttheme'] {
+  html[data-theme='light'] {
     background: var(--backg);
     --btn: #2ab1ce;
     --backg: #fff;
