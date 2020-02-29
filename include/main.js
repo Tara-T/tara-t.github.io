@@ -1,4 +1,6 @@
 
+$(document).ready(function() {
+
  var checkbox = document.querySelector('input[name=mode]');
 
         checkbox.addEventListener('change', function() {
@@ -17,3 +19,4 @@
                 document.documentElement.classList.remove('transition');
             }, 1000)
         }
+    });

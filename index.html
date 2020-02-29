@@ -14,6 +14,7 @@
     <script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <!-- -->
     <link rel="stylesheet" type="text/css" href="/include/main.css">
+    <script  src="/include/main.js"></script>
     <link rel="icon" href="/media/Frisk.png">
     <!-- Navbar -->
     <nav class='navbar navbar-expand-lg navbar-dark sticky-top'>
@@ -32,25 +33,32 @@
                 <li class='nav-item'>
                     <a class='nav-link' href='/rpi/'>Rpi</a>
                 </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='/christmas/en/'>Christmas</a>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        School
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item disabled' href='#'>School</a>
+                        <div class='dropdown-divider'></div>
+                        <a class='dropdown-item disabled' href='#'>Norsk</a>
+                        <a class='dropdown-item disabled' href='#'>English</a>
+                        <a class='dropdown-item disabled' href='#'>Samfunsfag</a>
+                    </div>
                 </li>
                 <li class='nav-item dropdown'>
                     <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                        Other parts
+                        Holidays
                     </a>
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                        <a class='dropdown-item disabled' href='#'>Others</a>
+                        <a class='dropdown-item disabled' href='#'>Holidays</a>
                         <div class='dropdown-divider'></div>
-                        <a class='dropdown-item disabled' href='#'>Sd Cards</a>
-                        <a class='dropdown-item disabled' href='#'>Cables</a>
+                        <a class='dropdown-item disabled' href='#'>Easter</a>
+                        <a class='dropdown-item' href='/christmas/en/'>Christmas</a>
                     </div>
-                </li>
             </ul>
         </div>
             <input class="container_toggle" type="checkbox" id="switch" name="mode">
         <label for="switch">Toggle</label>
-        <script  src="/include/main.js"></script>
         </div>
     </nav>
     <!-- End of Navbar -->
@@ -63,7 +71,7 @@
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">Just my website</p>
         <hr class="my-4">
-        <p>If you are here for Christmas please do ignore Rpi page</p>
+        <p>A project made by a bored kid</p>
     <!--
         <div id="main"></div>
         <script type="text/javascript">

@@ -3,67 +3,72 @@
 
 <head>
     <title>Christmas</title>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <script crossorigin='anonymous' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    <script crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' rel='stylesheet'>
-    <script crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <!-- -->
-    <link href='/include/main.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/include/main.css">
     <script  src="/include/main.js"></script>
-    <link rel='icon' href='/media/Frisk.png'>
+    <link rel="icon" href="/media/Frisk.png">
     <!-- Navbar -->
-    <nav class='navbar navbar-expand-lg navbar-dark sticky-top' style='background-color: #6f42c1;'>
+    <nav class='navbar navbar-expand-lg navbar-dark sticky-top'>
         <a class='navbar-brand' href='/'>
-            <img alt='' class='d-inline-block align-top' height='57'
-                src='/media/Frisk.png'
-                width='40'>
+            <img src='/media/Frisk.png' width='40' height='57' class='d-inline-block align-top' alt=''>
         </a>
         <a class='navbar-brand' href='/'>Tara's website</a>
-        <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'
-            class='navbar-toggler' data-target='#navbarSupportedContent' data-toggle='collapse' type='button'>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul class='navbar-nav mr-auto'>
-                <li class='nav-item'>
-                    <a class='nav-link' href='/'>Home<span class='sr-only'>(current)</span>
-                    </a>
+                <li class='nav-item active'>
+                    <a class='nav-link' href='/'>Home<span class='sr-only'>(current)</span></a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' href='/rpi/'>Rpi</a>
                 </li>
-                <li class='nav-item active'>
-                    <a class='nav-link' href='/christmas/en/'>Christmas</a>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        School
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item disabled' href='#'>School</a>
+                        <div class='dropdown-divider'></div>
+                        <a class='dropdown-item disabled' href='#'>Norsk</a>
+                        <a class='dropdown-item disabled' href='#'>English</a>
+                        <a class='dropdown-item disabled' href='#'>Samfunsfag</a>
+                    </div>
                 </li>
                 <li class='nav-item dropdown'>
-                    <a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown'
-                        href='' id='navbarDropdown' role='button'>
-                        Other parts
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        Holidays
                     </a>
-                    <div aria-labelledby='navbarDropdown' class='dropdown-menu'>
-                        <a class='dropdown-item disabled' href='#'>Others</a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item disabled' href='#'>Holidays</a>
                         <div class='dropdown-divider'></div>
-                        <a class='dropdown-item disabled' href='#'>Sd Cards</a>
-                        <a class='dropdown-item disabled' href='#'>Cables</a>
+                        <a class='dropdown-item disabled' href='#'>Easter</a>
+                        <a class='dropdown-item' href='/christmas/en/'>Christmas</a>
                     </div>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a href='../en' style="padding-right: 6px;">
-                    <button type="button" class="btn btn-info my-2 my-sm-0">
+                    <button type="button" class="btn btn-success my-2 my-sm-0">
                         English
                     </button>
                 </a>
                 <a href='../no' style="padding-right: 6px;">
-                    <button type="button" class="btn btn-success my-2 my-sm-0">
+                    <button type="button" class="btn btn-info my-2 my-sm-0">
                         Norsk
                     </button>
                 </a>
                 <input class="container_toggle" type="checkbox" id="switch" name="mode">
-        <label for="switch">Toggle</label>
+                <label for="switch">Toggle</label>
             </form>
         </div>
     </nav>
