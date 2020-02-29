@@ -10,7 +10,7 @@ html {
   
   html[data-theme='lighttheme'] {
     background: var(--backg);
-    --btn: #2ab1ce;
+    --btn: #0d5a6b;
     --backg: #fff;
     --colorx: #232323;
     --backgcr:#bababe;
@@ -46,7 +46,7 @@ html {
   }
   
   input:checked + label {
-    background: #FFFF00;
+    background: #0d5a6b;
   }
   
   input:checked + label:after {
