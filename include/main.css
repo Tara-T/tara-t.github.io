@@ -3,8 +3,9 @@ html {
     --btn: #FFFF00;
     --backg: #232323;
     --colorx: #fff;
-    --backgcr: #4a4a4d;
+    --backgcr: #3a3a3d;
     --shadow: #111111;
+    --card-color: #56565a;
 }
 html[data-theme='lighttheme'] {
     background: var(--backg);
@@ -48,8 +49,8 @@ input:checked+label:after {
     transform: translateX(-100%);
 }
 html.transition, html.transition *, html.transition *:before, html.transition *:after {
-    transition: ease-in-out 200ms !important;
-    transition-delay: 0 !important;
+    transition: ease-in-out 200ms;
+    transition-delay: 0;
 }
 /* Button end */
 
@@ -60,8 +61,11 @@ body {
     background-color: var(--backg);
     box-shadow: 5px 10px 8px 10px var(--shadow);
 }
+  .jumbotron{
+      background-color: var(--backgcr);
+  }
 .col-sm-12, .card {
-    background-color: var(--backgcr);
+    background-color: var(--card-color);
 }
 .article {
     position: static;
