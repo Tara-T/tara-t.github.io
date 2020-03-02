@@ -60,7 +60,7 @@ body {
     background-color: var(--backg);
     box-shadow: 5px 10px 8px 10px var(--shadow);
 }
-.jumbotron, .card {
+.col-sm-12, .card {
     background-color: var(--backgcr);
 }
 .article {
@@ -89,4 +89,9 @@ nav {
     font-size: 15px;
     box-shadow: 5px 10px 8px 10px var(--shadow);
     --colorx: white;
+}
+.col-sm-12 {
+    background-color: var(--backgcr);
+    box-shadow: 5px 10px 8px 10px #111111;
+    color: var(--color);
 }
