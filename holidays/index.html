@@ -2,9 +2,8 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <title>Holidays</title>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="cDH8rURGED-6cr885rNdvv_u-zrrZ6-t8Q5Cgwpo9eQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -27,8 +26,8 @@
         </button>
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul class='navbar-nav mr-auto'>
-                <li class='nav-item active'>
-                    <a class='nav-link' href='/'>Home<span class='sr-only'>(current)</span></a>
+                <li class='nav-item'>
+                    <a class='nav-link' href='/'>Home</a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' href='/rpi/'>Rpi</a>
@@ -45,8 +44,8 @@
                         <a class='dropdown-item disabled' href='#'>Samfunsfag</a>
                     </div>
                 </li>
-                <li class='nav-item dropdown'>
-                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                <li class='nav-item dropdown active'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'><span class='sr-only'>(current)</span>
                         Holidays
                     </a>
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
@@ -62,28 +61,36 @@
         </div>
     </nav>
     <!-- End of Navbar -->
-    <!-- Jumbotron -->
 </head>
-
-<body>
-    <br/>
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">Just my website</p>
-        <hr class="my-4">
-        <p>A project made by a bored kid</p>
-    <!--
-        <div id="main"></div>
-        <script type="text/javascript">
-        var converter = new showdown.Converter();
-
-        var text = "# Hello, world! \n <p class='lead'> Just my website.</p> \n --- \n If you are here for Christmas please do ignore Rpi page";
-        var html = converter.makeHtml(text);
-
-        document.getElementById("main").innerHTML = html;
-        </script>
-    -->
-    </div>
-</body>
-
+    <body>
+        <br>
+        <div class="jumbotron" style=" margin-left: 30px; margin-right: 30px;">
+            <h1 class="display-4">Holidays</h1>
+            <hr class="my-4">
+            <p>I'll make pages about them as they come and go</p>
+        </div>
+        <div class="card-deck" style="margin-left:15px; margin-right: 15px;">
+            <div class="card">
+                <img src="/media/easter.jpg" style="height: 30rem" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Easter</h5>
+                    <p class="card-text">Eggs</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary disabled">Easter</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/media/christmas.jpg" style="height: 30rem" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Christmas</h5>
+                    <p class="card-text">Presents and Santa</p>
+                </div>
+                <div class="card-footer">
+                    <a href="/christmas/en/" class="btn btn-primary">Christmas</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </body>
 </html>

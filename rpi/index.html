@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>Raspberry Pi</title>
+    <title>Raspberry pi</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
@@ -9,23 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <!-- -->
-    <link rel="stylesheet" type="text/css" href="../include/main.css">
-    <style type="text/css">
-    body {
-        background-color: #242222;
-        color: white;
-    }
-
-    .card {
-        background-color: #4a4a4d;
-    }
-    </style>
-    <link rel="icon" href="https://vignette.wikia.nocookie.net/undertale/images/d/d3/Frisk.png/revision/latest?cb=20151018200133">
+    <link rel="stylesheet" type="text/css" href="/include/main.css">
+    <script  src="/include/main.js"></script>
+    <link rel="icon" href="/media/Frisk.png">
     <!-- Navbar -->
-    <nav class='navbar navbar-expand-lg navbar-dark sticky-top' style="background-color: #6f42c1;">
+    <nav class='navbar navbar-expand-lg navbar-dark sticky-top'>
         <a class='navbar-brand' href='/'>
-            <img src='https://vignette.wikia.nocookie.net/undertale/images/d/d3/Frisk.png/revision/latest?cb=20151018200133' width='40' height='57' class='d-inline-block align-top' alt=''>
+            <img src='/media/Frisk.png' width='40' height='57' class='d-inline-block align-top' alt=''>
         </a>
         <a class='navbar-brand' href='/'>Tara's website</a>
         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
@@ -34,34 +27,44 @@
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul class='navbar-nav mr-auto'>
                 <li class='nav-item'>
-                    <a class='nav-link' href='/'>Home<span class='sr-only'>(current)</span></a>
+                    <a class='nav-link' href='/'>Home</a>
                 </li>
                 <li class='nav-item active'>
-                    <a class='nav-link' href='/rpi/'>Rpi</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='/christmas/en/'>Christmas</a>
+                    <a class='nav-link' href='/rpi/'>Rpi<span class='sr-only'>(current)</span></a>
                 </li>
                 <li class='nav-item dropdown'>
                     <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                        Other parts
+                        School
                     </a>
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                        <a class='dropdown-item disabled' href='#'>Others</a>
+                        <a class='dropdown-item' href='/school/'>School</a>
                         <div class='dropdown-divider'></div>
-                        <a class='dropdown-item disabled' href='#'>SD Cards</a>
-                        <a class='dropdown-item disabled' href='#'>Cables</a>
+                        <a class='dropdown-item disabled' href='#'>Norsk</a>
+                        <a class='dropdown-item disabled' href='#'>English</a>
+                        <a class='dropdown-item disabled' href='#'>Samfunsfag</a>
                     </div>
                 </li>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        Holidays
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item' href='/holidays/'>Holidays</a>
+                        <div class='dropdown-divider'></div>
+                        <a class='dropdown-item disabled' href='#'>Easter</a>
+                        <a class='dropdown-item' href='/christmas/en/'>Christmas</a>
+                    </div>
             </ul>
         </div>
+            <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+        </div>
     </nav>
-</head>
 <!-- End of Navbar -->
 
 <body>
     <br>
-    <div class="jumbotron" style="background-color: #4a4a4d; margin-left: 30px; margin-right: 30px;">
+    <div class="jumbotron" style=" margin-left: 30px; margin-right: 30px;">
         <h1 class="display-4">Raspberry Pi</h1>
         <p class="lead">Not an edible kind of pi</p>
         <hr class="my-4">

@@ -3,90 +3,85 @@
 
 <head>
     <title>Christmas</title>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <script crossorigin='anonymous' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    <script crossorigin='anonymous' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
-    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' rel='stylesheet'>
-    <script crossorigin='anonymous' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <!-- -->
-    <link href='/include/main.css' rel='stylesheet' type='text/css'>
-    <style type='text/css'>
-    body {
-        background-color: #242222;
-        color: white;
-    }
-
-    .article {
-        background-attachment: scroll;
-        background-image: url('../tree.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: static;
-        line-height: 1.6;
-        ;
-        font-size: 15px;
-        box-shadow: 5px 10px 8px 10px #111111;
-    }
-    </style>
-    <link rel='icon' href='https://vignette.wikia.nocookie.net/undertale/images/d/d3/Frisk.png/revision/latest?cb=20151018200133'>
+    <link rel="stylesheet" type="text/css" href="/include/main.css">
+    <script  src="/include/main.js"></script>
+    <link rel="icon" href="/media/Frisk.png">
     <!-- Navbar -->
-    <nav class='navbar navbar-expand-lg navbar-dark sticky-top' style='background-color: #6f42c1;'>
+    <nav class='navbar navbar-expand-lg navbar-dark sticky-top'>
         <a class='navbar-brand' href='/'>
-            <img alt='' class='d-inline-block align-top' height='57' src='https://vignette.wikia.nocookie.net/undertale/images/d/d3/Frisk.png/revision/latest?cb=20151018200133' width='40'>
+            <img src='/media/Frisk.png' width='40' height='57' class='d-inline-block align-top' alt=''>
         </a>
         <a class='navbar-brand' href='/'>Tara's website</a>
-        <button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarSupportedContent' data-toggle='collapse' type='button'>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul class='navbar-nav mr-auto'>
-                <li class='nav-item'>
-                    <a class='nav-link' href='/'>Home<span class='sr-only'>(current)</span>
-                    </a>
+                <li class='nav-item active'>
+                    <a class='nav-link' href='/'>Home</a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' href='/rpi/'>Rpi</a>
                 </li>
-                <li class='nav-item active'>
-                    <a class='nav-link' href='/christmas/en/'>Christmas</a>
+                <li class='nav-item dropdown'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        School
+                    </a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item' href='/school/'>School</a>
+                        <div class='dropdown-divider'></div>
+                        <a class='dropdown-item disabled' href='#'>Norsk</a>
+                        <a class='dropdown-item disabled' href='#'>English</a>
+                        <a class='dropdown-item disabled' href='#'>Samfunsfag</a>
+                    </div>
                 </li>
                 <li class='nav-item dropdown'>
-                    <a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='' id='navbarDropdown' role='button'>
-                        Other parts
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                        Holidays
                     </a>
-                    <div aria-labelledby='navbarDropdown' class='dropdown-menu'>
-                        <a class='dropdown-item disabled' href='#'>Others</a>
+                    <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <a class='dropdown-item' href='/holidays/'>Holidays</a>
                         <div class='dropdown-divider'></div>
-                        <a class='dropdown-item disabled' href='#'>Sd Cards</a>
-                        <a class='dropdown-item disabled' href='#'>Cables</a>
+                        <a class='dropdown-item disabled' href='#'>Easter</a>
+                        <a class='dropdown-item' href='/christmas/en/'>Christmas<span class='sr-only'>(current)</span></a>
                     </div>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a href='../en' style="padding-right: 6px;">
-                    <button type="button" class="btn btn-info my-2 my-sm-0">
+                    <button type="button" class="btn btn-success my-2 my-sm-0">
                         English
                     </button>
                 </a>
-                <a href='../no'>
-                    <button type="button" class="btn btn-success my-2 my-sm-0">
+                <a href='../no' style="padding-right: 6px;">
+                    <button type="button" class="btn btn-info my-2 my-sm-0">
                         Norsk
                     </button>
                 </a>
+                <input class="container_toggle" type="checkbox" id="switch" name="mode">
+                <label for="switch">Toggle</label>
             </form>
         </div>
     </nav>
     <!-- End of Navbar -->
     <!-- Article -->
 </head>
+<body>
 <br />
 <div class='container'>
     <div class='row'>
         <div class='col-sm-12'>
-            <div class='article'>
                 <div class="christmas">
+                <!-- Start of text -->
                 <br />
                 <h1 style='margin-left: 20px; margin-right: 20px;'>Alt om julen i Amerika</h1>
                 <p style='margin-left: 30px; margin-right: 30px;'>Har du noen gang lurt p&aring; hvordan folk i Amerika feirer jul? Har de en nisse som spiser gr&oslash;t? Spiser de marsipan? Hva er det med jule filmene?</p>
@@ -100,7 +95,7 @@
                     <h3 style='margin-left: 20px;'>Gaver</h3>
                 </p>
                 <div>
-                    <p style='float:right'><img src='https://i.pinimg.com/originals/95/4d/49/954d49b305b9344d69f0bcb341f0e698.png' height='300px' width='200px' alt='...'></p>
+                    <p style='float:right'><img src='/media/santa.png' height='300px' width='200px' alt='...'></p>
                     <p style='margin-left: 30px; margin-right: 30px'>Men hvorfor gir vi gaver til hverandre? Tips: det er ikke fordi du var god hele &aring;ret.</p>
                     <p style='margin-left: 30px;'>Det er sagt at tre vise menn, Melchior, Kaspar, Balthasar ga gaver til lille Baby Jesus, siden vi ikke kan gi gaver til Jesus, fordi han er d&oslash;d, gir vi gaver til hverandre.</p>
                     <p>&nbsp;</p>
@@ -135,7 +130,6 @@
 </div>
 <br />
 
-<body>
 </body>
 
 </html>
