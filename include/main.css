@@ -3,7 +3,7 @@ html {
     --btn: #FFFF00;
     --backg: #232323;
     --colorx: #fff;
-    --backgcr: #3a3a3d;
+    --backgcr: #3d3d40;
     --shadow: #111111;
     --card-color: #56565a;
 }
@@ -59,7 +59,6 @@ h1, h3, h5, p {
 }
 body {
     background-color: var(--backg);
-    box-shadow: 5px 10px 8px 10px var(--shadow);
 }
   .jumbotron{
       background-color: var(--backgcr);
