@@ -12,8 +12,9 @@ html[data-theme='lighttheme'] {
     --btn: #0d5a6b;
     --backg: #fff;
     --colorx: #232323;
-    --backgcr: #bababe;
+    --backgcr: #e0e0e0;
     --shadow: #7e7e7e;
+    --card-color: #bbbbbb;
 }
 /* Button start */
 
@@ -95,6 +96,6 @@ nav {
 }
 .col-sm-12 {
     background-color: var(--backgcr);
-    box-shadow: 5px 10px 8px 10px #111111;
+    box-shadow: 5px 10px 8px 10px var(--shadow);
     color: var(--color);
 }
