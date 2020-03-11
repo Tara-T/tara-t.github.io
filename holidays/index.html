@@ -52,45 +52,56 @@
                         <a class='dropdown-item' href='/holidays/'>Holidays</a>
                         <div class='dropdown-divider'></div>
                         <a class='dropdown-item disabled' href='#'>Easter</a>
-                        <a class='dropdown-item' href='/christmas/en/'>Christmas</a>
+                        <a class='dropdown-item' href='/holidays/christmas/en/'>Christmas</a>
                     </div>
             </ul>
         </div>
+        <form class="form-inline my-2 my-lg-0">
             <input class="container_toggle" type="checkbox" id="switch" name="mode">
         <label for="switch">Toggle</label>
+        </form>
         </div>
     </nav>
     <!-- End of Navbar -->
 </head>
-    <body>
-        <br>
-        <div class="jumbotron" style=" margin-left: 30px; margin-right: 30px;">
-            <h1 class="display-4">Holidays</h1>
-            <hr class="my-4">
-            <p>I'll make pages about them as they come and go</p>
-        </div>
-        <div class="card-deck" style="margin-left:15px; margin-right: 15px;">
-            <div class="card">
-                <img src="/media/easter.jpg" style="height: 30rem" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Easter</h5>
-                    <p class="card-text">Eggs</p>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="article">
+                    <br />
+                    <h1 class="display-4">Holidays</h1>
+                    <p>I'll make pages about them as they come and go</p>
+                    <hr class="my-4">
                 </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary disabled">Easter</a>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="easter.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Easter</h5>
+                            <p class="card-text">Eggs</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary disabled">Easter</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="christmas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Christmas</h5>
+                            <p class="card-text">Presents and Santa</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="christmas/en/" class="btn btn-primary">Christmas</a>
+                            <br />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/media/christmas.jpg" style="height: 30rem" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Christmas</h5>
-                    <p class="card-text">Presents and Santa</p>
-                </div>
-                <div class="card-footer">
-                    <a href="/christmas/en/" class="btn btn-primary">Christmas</a>
-                </div>
-            </div>
         </div>
-        <br/>
-    </body>
+    </div>  
+</body>
+
 </html>

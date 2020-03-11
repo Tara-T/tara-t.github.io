@@ -84,7 +84,7 @@ nav {
 }
 .christmas {
     background-attachment: scroll;
-    background-image: url('/christmas/tree.png');
+    background-image: url('/holidays/christmas/tree.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -98,4 +98,5 @@ nav {
     background-color: var(--backgcr);
     box-shadow: 5px 10px 8px 10px var(--shadow);
     color: var(--color);
+    
 }
