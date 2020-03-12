@@ -13,7 +13,9 @@
         "url": "https://github.com/Tara-T/tara-t.github.io/issues"
     },
     "dependencies": {
-        "jquery":"4.0.0",
-        "bootstrap":"4.3.1"
+        "bootstrap": "4.3.1",
+        "connect": "^3.7.0",
+        "jquery": "4.0.0",
+        "serve-static": "^1.14.1"
     }
 }
