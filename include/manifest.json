@@ -1,0 +1,18 @@
+{
+    "start_url": "/",
+    "name": "tara-t.github.io",
+    "manifest_version": 1,
+    "background_color": "#232323",
+    "theme_color": "#6f42c1",
+    "short_name": "Tara",
+    "display": "standalone",
+    "description": "App for stuff idk.",
+    "lang": "en",
+    "scope":"http://tara-t.github.io/",
+    "icons": [{
+        "src": "/media/Frisk.png",
+        "sizes": "38x58",
+        "type": "image/png"
+    }]
+}
+
