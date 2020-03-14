@@ -11,7 +11,7 @@
   "scope": "http://tara-t.github.io/",
   "icons": [
     {
-      "src": "/media/Frisk.png",
+      "src": "/media/frisk.png",
       "sizes": "1000x1000",
       "type": "image/png"
     },
