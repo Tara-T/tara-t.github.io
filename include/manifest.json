@@ -4,11 +4,12 @@
   "manifest_version": 1,
   "background_color": "#232323",
   "theme_color": "#6f42c1",
-  "short_name": "Tara",
-  "display": "standalone",
+  "short_name": "Tara's website",
+  "display": "fullscreen",
   "description": "App for stuff idk.",
   "lang": "en",
-  "scope": "http://tara-t.github.io/",
+  "scope": "/",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/media/apple-touch-icon-120x120.png",
