@@ -11,21 +11,6 @@
   "scope": "http://tara-t.github.io/",
   "icons": [
     {
-      "src": "/media/frisk.png",
-      "sizes": "1000x1000",
-      "type": "image/png"
-    },
-    {
-      "src": "/media/frisk_144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "/media/frisk_192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
       "src": "/media/frisk_iPhoneSmall.png",
       "sizes": "120x120",
       "type": "image/png"
@@ -48,6 +33,46 @@
     {
       "src": "/media/frisk_appStore.png",
       "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_152.png",
+      "sizes": "152z152",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/frisk_512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
