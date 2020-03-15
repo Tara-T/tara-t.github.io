@@ -56,11 +56,6 @@
       "type": "image/png"
     },
     {
-      "src": "/media/frisk_152.png",
-      "sizes": "152z152",
-      "type": "image/png"
-    },
-    {
       "src": "/media/frisk_192.png",
       "sizes": "192x192",
       "type": "image/png"
