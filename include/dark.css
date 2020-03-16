@@ -1,0 +1,32 @@
+h1,
+h3,
+h5,
+p {
+  color: #fff;
+}
+body {
+  background-color: #232323;
+}
+.jumbotron {
+  background-color: #3d3d40;
+}
+.col-sm-12
+.card {
+  background-color: #56565a;
+}
+.col-sm-12 {
+  background-color: var(#3d3d40);
+  box-shadow: 5px 10px 8px 10px var(#111111);
+  color: var(#fff);
+}
+.christmas {
+  box-shadow: 5px 10px 8px 10px var(#111111);
+}
+.christmas >
+h1,
+h1,
+h3,
+h5,
+p {
+  color: white;
+}
