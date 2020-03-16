@@ -12,8 +12,7 @@
     <meta name="og:site_name" property="og:site_name" content="Tara's Website" />
     <meta name="og:image" property="og:image" content="/school/alphabet.jpg" />
     <meta name="og:url" content="/" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#6f42c1">
     <!--Apple tags-->
     <link rel="apple-touch-icon" sizes="120x120" href="/media/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/media/apple-touch-icon-152x152.png">
@@ -38,6 +37,11 @@
         crossorigin="anonymous"></script>
     <!-- -->
     <link rel="stylesheet" type="text/css" href="/include/main.css">
+    <div id="colorScheme">
+        <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="/include/dark.css">
+        <link rel="stylesheet" type="text/css"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" href="/include/dark.css">
+    </div>
     <script src="/include/main.js"></script>
     <link rel="icon" href="/media/Frisk.png">
     <link rel="manifest" href='/include/manifest.json'>
@@ -86,8 +90,10 @@
                     </div>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="container_toggle" type="checkbox" id="switch" name="mode">
-                <label for="switch">Toggle</label>
+                <label class="switch">
+                    <input type="checkbox" id="colorPreferance" onclick="colorChange()">
+                    <span class="slider round"></span>
+                </label>
             </form>
         </div>
         </div>

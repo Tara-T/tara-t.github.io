@@ -12,8 +12,7 @@
     <meta name="og:site_name" property="og:site_name" content="Tara's Website" />
     <meta name="og:image" property="og:image" content="/holidays/christmas.jpg" />
     <meta name="og:url" content="/" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#6f42c1">
     <!--Apple tags-->
     <link rel="apple-touch-icon" sizes="120x120" href="/media/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/media/apple-touch-icon-152x152.png">
@@ -25,13 +24,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Tara's Website">
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- -->
     <link rel="stylesheet" type="text/css" href="/include/main.css">
-    <script  src="/include/main.js"></script>
+    <div id="colorScheme">
+        <link rel="stylesheet" type="text/css" media="(prefers-color-scheme: dark)" href="/include/dark.css">
+        <link rel="stylesheet" type="text/css"
+            media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" href="/include/dark.css">
+    </div>
+    <script src="/include/main.js"></script>
     <link rel="icon" href="/media/Frisk.png">
     <link rel="manifest" href='/include/manifest.json'>
     <!-- Navbar -->
@@ -40,7 +51,8 @@
             <img src='/media/frisk_144.png' width='40' height='40' class='d-inline-block align-top' alt=''>
         </a>
         <a class='navbar-brand' href='/'>Tara's website</a>
-        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
@@ -52,7 +64,8 @@
                     <a class='nav-link' href='/rpi/'>Rpi</a>
                 </li>
                 <li class='nav-item dropdown'>
-                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button'
+                        data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
                         School
                     </a>
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
@@ -64,7 +77,9 @@
                     </div>
                 </li>
                 <li class='nav-item dropdown active'>
-                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'><span class='sr-only'>(current)</span>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown' role='button'
+                        data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'><span
+                            class='sr-only'>(current)</span>
                         Holidays
                     </a>
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
@@ -75,8 +90,10 @@
                     </div>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="container_toggle" type="checkbox" id="switch" name="mode">
-            <label for="switch">Toggle</label>
+                <label class="switch">
+                    <input type="checkbox" id="colorPreferance" onclick="colorChange()">
+                    <span class="slider round"></span>
+                </label>
             </form>
         </div>
         </form>
@@ -121,7 +138,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
 </body>
 
 </html>
