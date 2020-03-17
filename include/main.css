@@ -75,6 +75,7 @@ html.transition *:after {
   position: static;
   line-height: 1.6;
   font-size: 15px;
+  word-wrap: break-word;
 }
 .article h1,
 h2 {
