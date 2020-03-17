@@ -96,6 +96,18 @@ nav {
   position: static;
   line-height: 1.6;
   font-size: 15px;
-  box-shadow: 5px 10px 8px 10px var(--shadow);
+  box-shadow: 5px 10px 8px 10px #7e7e7e;
+  color: white;
+}
+.christmas p {
+  color: white;
+}
+.christmas h3 {
+  color: white;
+}
+.christmas h1 {
+  color: white;
+}
+.christmas h5 {
   color: white;
 }

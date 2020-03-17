@@ -15,18 +15,10 @@ body {
   background-color: #56565a;
 }
 .col-sm-12 {
-  background-color: var(#3d3d40);
-  box-shadow: 5px 10px 8px 10px var(#111111);
-  color: var(#fff);
+  background-color: #3d3d40;
+  box-shadow: 5px 10px 8px 10px #111111;
+  color: #fff;
 }
 .christmas {
-  box-shadow: 5px 10px 8px 10px var(#111111);
-}
-.christmas >
-h1,
-h1,
-h3,
-h5,
-p {
-  color: white;
+  box-shadow: 5px 10px 8px 10px #111111;
 }
