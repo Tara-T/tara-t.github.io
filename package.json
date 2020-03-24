@@ -1,7 +1,23 @@
 {
   "name": "tara-t.github.io",
   "description": "My website",
-  "version": "0.1.0-electron",
+  "version": "0.1.1",
+  "build": {
+    "appId": "tara-t.github.io",
+    "productName": "Tara's website",
+    "mac": {
+      "category": "public.app-category.lifestyle"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "News"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tara-T/tara-t.github.io.git"
