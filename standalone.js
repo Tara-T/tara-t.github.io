@@ -28,7 +28,7 @@ function createWindow() {
   });
 
   // and load the github hosted page.
-  mainWindow.loadURL("http://localhost:4400/");
+  mainWindow.loadURL("https://tara-t.github.io/");
   //mainWindow.loadURL("file://" + __dirname + "/index.html");
   // mainWindow.loadURL('file://' + __dirname + '/bower_components/angular-material/angular-material.css')
 
