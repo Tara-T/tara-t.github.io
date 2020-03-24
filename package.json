@@ -1,21 +1,54 @@
 {
-    "name": "tara-t.github.io",
-    "description": "My website",
-    "version": "0.1.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Tara-T/tara-t.github.io.git"
+  "name": "tara-t.github.io",
+  "description": "My website",
+  "version": "0.1.1",
+  "build": {
+    "appId": "tara-t.github.io",
+    "productName": "Tara's website",
+    "mac": {
+      "category": "public.app-category.lifestyle"
     },
-    "keywords": [],
-    "author": "tara-t",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Tara-T/tara-t.github.io/issues"
+    "dmg": {
+      "icon": false
     },
-    "dependencies": {
-        "bootstrap": "4.3.1",
-        "connect": "^3.7.0",
-        "jquery": "*",
-        "serve-static": "^1.14.1"
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "News"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tara-T/tara-t.github.io.git"
+  },
+  "keywords": [],
+  "author": "tara-t",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tara-T/tara-t.github.io/issues"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "connect": "^3.7.0",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-updater": "^4.2.5",
+    "jquery": "*",
+    "popper.js": "^1.14.4",
+    "serve-static": "^1.14.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
+  },
+  "homepage": "https://github.com/Tara-T/tara-t.github.io#readme",
+  "main": "standalone.js",
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1",
+    "electron-packager": "^14.2.1",
+    "minimist": ">=1.2.2"
+  }
 }

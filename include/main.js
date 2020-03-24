@@ -13,6 +13,15 @@ if ("serviceWorker" in navigator) {
   console.log("Service workers are not supported.");
 }
 
+window.$ = window.jQuery = require('jquery'); // not sure if you need this at all
+window.Bootstrap = require('bootstrap');
+
+const customTitlebar = require('custom-electron-titlebar');
+
+new customTitlebar.Titlebar({
+  backgroundColor: customTitlebar.Color.fromHex('#6f42c1')
+});
+
 //This function will be called when the toggle is pressed
 function colorChange() {
   //Find the button which will be checked if it's checked or not
@@ -23,6 +32,7 @@ function colorChange() {
     preferesLight();
   }
 }
+
 
 //Fancy transition between dark mode and light mode
 let trans = () => {
@@ -65,7 +75,17 @@ function whenReady() {
     //If they don't then make them use dark mode like a normal person
     preferesDark();
   }
+  document
+  .getElementById("colorPreferance")
+  .addEventListener("click", colorChange, true);
 }
+
+if(navigator.appVersion.indexOf("MSIE 7.")!=-1){
+  console.log("Internet explorer");
+} else {
+  console.log("noppe");
+}
+
 
 function englishShow() {
   var norskID = document.getElementById("norsk");
@@ -116,31 +136,36 @@ function handleColorChange(event) {
   }
 }
 
-(function(document,navigator,standalone) {
+(function(document, navigator, standalone) {
   // prevents links from apps from oppening in mobile safari
   // this javascript must be the first script in your <head>
-  if ((standalone in navigator) && navigator[standalone]) {
-    var curnode, location=document.location, stop=/^(a|html)$/i;
-    document.addEventListener('click', function(e) {
-      curnode=e.target;
-      while (!(stop).test(curnode.nodeName)) {
-        curnode=curnode.parentNode;
-      }
-      // Condidions to do this only on links to your own app
-      // if you want all links, use if('href' in curnode) instead.
-      if(
-        'href' in curnode && // is a link
-        (chref=curnode.href).replace(location.href,'').indexOf('#') && // is not an anchor
-        (	!(/^[a-z\+\.\-]+:/i).test(chref) ||                       // either does not have a proper scheme (relative links)
-          chref.indexOf(location.protocol+'//'+location.host)===0 ) // or is in the same protocol and domain
-      ) {
-        e.preventDefault();
-        location.href = curnode.href;
-      }
-    },false);
+  if (standalone in navigator && navigator[standalone]) {
+    var curnode,
+      location = document.location,
+      stop = /^(a|html)$/i;
+    document.addEventListener(
+      "click",
+      function(e) {
+        curnode = e.target;
+        while (!stop.test(curnode.nodeName)) {
+          curnode = curnode.parentNode;
+        }
+        // Condidions to do this only on links to your own app
+        // if you want all links, use if('href' in curnode) instead.
+        if (
+          "href" in curnode && // is a link
+          (chref = curnode.href).replace(location.href, "").indexOf("#") && // is not an anchor
+          (!/^[a-z\+\.\-]+:/i.test(chref) || // either does not have a proper scheme (relative links)
+            chref.indexOf(location.protocol + "//" + location.host) === 0) // or is in the same protocol and domain
+        ) {
+          e.preventDefault();
+          location.href = curnode.href;
+        }
+      },
+      false
+    );
   }
-})(document,window.navigator,'standalone');
-
+})(document, window.navigator, "standalone");
 
 var mql = matchMedia("(prefers-color-scheme: dark)");
 mql.onchange = handleColorChange;
