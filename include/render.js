@@ -7,14 +7,13 @@ const url = require("url");
 const { app, Menu, MenuItem } = require("electron").remote;
 
 const customTitlebar = require("custom-electron-titlebar");
-//const customTitlebar = require('..'); // Delete this line and uncomment top line
 
 window.addEventListener("DOMContentLoaded", () => {
-  new customTitlebar.Titlebar({
+  let titlebar = new customTitlebar.Titlebar({
     backgroundColor: customTitlebar.Color.fromHex("#6f32c1"),
     icon: url.format("http://localhost:4400/media/frisk_512.png")
   });
-
+  titlebar.updateMenu(menu);
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector);
     if (element) element.innerText = text;
@@ -24,6 +23,8 @@ window.addEventListener("DOMContentLoaded", () => {
     replaceText(`${type}-version`, process.versions[type]);
   }
 });
+// TODO: titlebar is not defined
+// Until fixed this code will remain commented
 
 const menu = new Menu();
 menu.append(
@@ -65,5 +66,3 @@ menu.append(
     ]
   })
 );
-
-titlebar.updateMenu(menu);
