@@ -1,3 +1,6 @@
+- name: Electron Builder Action
+  uses: samuelmeuli/action-electron-builder@v1.3.0
+
 name: Build/release
 
 on: push
