@@ -1,3 +1,9 @@
+::-webkit-scrollbar {
+    display: '';
+}
+:root{
+  overflow: visible;
+}
 /* Button start */
 
 /* The switch - the box around the slider */
@@ -87,6 +93,7 @@ h2 {
 }
 nav {
   background-color: #6f42c1;
+  /*-webkit-app-region: drag;*/
 }
 .christmas {
   background-attachment: scroll;

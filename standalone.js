@@ -21,7 +21,7 @@ function createWindow() {
     frame: false,
     // Hide the titlebar from MacOS applications while keeping the stop lights
     titleBarStyle: 'customButtonsOnHover', // or 'hidden',
-    icon: __dirname + "/media/frisk_512.png",
+    icon: __dirname+"/media/frisk_512.png",
     webPreferences: {
       nodeIntegration: true
     }
@@ -33,7 +33,7 @@ function createWindow() {
   // mainWindow.loadURL('file://' + __dirname + '/bower_components/angular-material/angular-material.css')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on("closed", function() {

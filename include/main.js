@@ -13,15 +13,6 @@ if ("serviceWorker" in navigator) {
   console.log("Service workers are not supported.");
 }
 
-window.$ = window.jQuery = require('jquery'); // not sure if you need this at all
-window.Bootstrap = require('bootstrap');
-
-const customTitlebar = require('custom-electron-titlebar');
-
-new customTitlebar.Titlebar({
-  backgroundColor: customTitlebar.Color.fromHex('#6f42c1')
-});
-
 //This function will be called when the toggle is pressed
 function colorChange() {
   //Find the button which will be checked if it's checked or not
@@ -32,7 +23,6 @@ function colorChange() {
     preferesLight();
   }
 }
-
 
 //Fancy transition between dark mode and light mode
 let trans = () => {
