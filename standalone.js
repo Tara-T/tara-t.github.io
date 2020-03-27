@@ -1,3 +1,4 @@
+if(require('electron-squirrel-startup')) return;
 //const autoUpdater = require("electron-updater");
 const electron = require("electron");
 // Module to control application life.
@@ -20,8 +21,8 @@ function createWindow() {
     // Remove the window frame from windows applications
     frame: false,
     // Hide the titlebar from MacOS applications while keeping the stop lights
-    titleBarStyle: 'customButtonsOnHover', // or 'hidden',
-    icon: __dirname+"/media/frisk_512.png",
+    titleBarStyle: "customButtonsOnHover", // or 'hidden',
+    icon: __dirname + "/media/frisk_512.png",
     webPreferences: {
       nodeIntegration: true
     }
@@ -48,12 +49,12 @@ function createWindow() {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-  /*app.on("ready", () => {
+/*app.on("ready", () => {
     autoUpdater.checkForUpdatesAndNotify();
     createWindow;
   });*/
 
-app.on('ready', createWindow);
+app.on("ready", createWindow);
 
 // Quit when all windows are closed.
 app.on("window-all-closed", function() {

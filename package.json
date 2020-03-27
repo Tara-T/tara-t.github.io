@@ -30,25 +30,32 @@
   },
   "dependencies": {
     "bootstrap": "4.3.1",
-    "connect": "^3.7.0",
     "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.2.5",
     "jquery": "*",
-    "popper.js": "^1.14.4",
-    "serve-static": "^1.14.1"
+    "popper.js": "^1.14.4"
   },
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
     "build": "electron-builder --mac --windows --linux",
+    "builddeb": "electron-packager . 'Tara-T App' --platform linux --arch x64 --out dist/ --overwrite --icon './media/frisk_512.ico'",
+    "buildwin": "electron-packager . 'Tara-T App' --platform 'win32' --icon './media/frisk_512.ico' --overwrite",
+    "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
+    "win32": "node ./packager.js",
     "release": "electron-builder --mac --windows --linux --publish always"
   },
   "homepage": "https://github.com/Tara-T/tara-t.github.io#readme",
   "main": "standalone.js",
   "devDependencies": {
+    "connect": "^3.7.0",
     "electron": "^8.1.1",
     "electron-builder": "^22.4.1",
     "electron-packager": "^14.2.1",
-    "minimist": ">=1.2.2"
+    "electron-winstaller": "^4.0.0",
+    "grunt-electron-installer": "^2.1.0",
+    "minimist": "^1.2.5",
+    "serve-static": "^1.14.1"
   }
 }
