@@ -38,12 +38,12 @@
   },
   "scripts": {
     "start": "electron .",
-    "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux",
-    "builddeb": "electron-packager . 'Tara-T App' --platform linux --arch x64 --out dist/ --overwrite --icon './media/frisk_512.ico'",
-    "buildwin": "electron-packager . 'Tara-T App' --platform 'win32' --icon './media/frisk_512.ico' --overwrite",
-    "deb64": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
-    "win32": "node ./packager.js",
+    "builddeb": "electron-packager . 'Tara-T App' --platform linux --arch x64 --out './build/deb/' --overwrite --icon './media/frisk_512.ico'",
+    "buildwin": "electron-packager . 'Tara-T App' --platform 'win32' --icon './media/frisk_512.ico' --out './build/win/' --overwrite",
+    "buildmac": "electron-packager . 'Tara-T App' --platform 'darwin' --icon './media/frisk_512.icns' --out './build/darwin/' --ignore '(dist)|(build)' --overwrite",
+    "deb64": "node ./packager_deb.js",
+    "win32": "node ./packager_win.js",
+    "mac": "node ./packager_mac.js",
     "release": "electron-builder --mac --windows --linux --publish always"
   },
   "homepage": "https://github.com/Tara-T/tara-t.github.io#readme",
@@ -51,7 +51,7 @@
   "devDependencies": {
     "connect": "^3.7.0",
     "electron": "^8.1.1",
-    "electron-builder": "^22.4.1",
+    "electron-installer-dmg": "^3.0.0",
     "electron-packager": "^14.2.1",
     "electron-winstaller": "^4.0.0",
     "grunt-electron-installer": "^2.1.0",
