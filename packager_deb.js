@@ -1,9 +1,11 @@
 const installer = require('electron-installer-debian')
 
 const options = {
-  src: './build/deb/',
+  src: './build/deb/tara-t.github.io-linux-x64/',
   dest: './dist/debInstaller/',
   arch: 'amd64',
+  name: 'Tara-T App',
+  productName: 'Tara-T App',
   description: "Tara's website, now an app!",
   icon: './media/frisk_512.png'
 }

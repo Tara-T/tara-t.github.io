@@ -31,6 +31,7 @@
   "dependencies": {
     "bootstrap": "4.3.1",
     "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-installer-debian": "^3.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.2.5",
     "jquery": "*",
@@ -38,7 +39,7 @@
   },
   "scripts": {
     "start": "electron .",
-    "builddeb": "electron-packager . 'Tara-T App' --platform 'linux' --arch x64 --icon './media/frisk_512.ico' --out './build/deb/' --ignore '(dist)|(build)' --overwrite",
+    "builddeb": "electron-packager . --platform 'linux' --arch x64 --icon './media/frisk_512.ico' --out './build/deb/' -executableName 'Tara-t App' --ignore '(dist)|(build)' --overwrite",
     "buildwin": "electron-packager . 'Tara-T App' --platform 'win32' --icon './media/frisk_512.ico' --out './build/win/' --ignore '(dist)|(build)' --overwrite",
     "buildmac": "electron-packager . 'Tara-T App' --platform 'darwin' --icon './media/frisk_512.icns' --out './build/darwin/' --ignore '(dist)|(build)' --overwrite",
     "deb64": "node ./packager_deb.js",
