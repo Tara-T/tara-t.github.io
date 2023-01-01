@@ -35,7 +35,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.2.5",
     "jquery": "*",
-    "phaser": "^3.22.0",
+    "phaser": "^3.55.2",
     "popper.js": "^1.14.4"
   },
   "scripts": {
